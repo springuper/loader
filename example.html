@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>loader</title>
+    </head>
+    <body>
+        <h1 class="aha">Loader Testing</h1>
+        <script type="text/javascript" src="loader.js"></script>
+        <script>
+            Loader.loadCSS('resource.php?type=css&delay=1', function () {
+                console.log('CSS is loaded');
+            });
+            Loader.loadJS('resource.php?type=js&delay=1', function () {
+                console.log('JS is loaded');
+            });
+        </script>
+    </body>
+</html>
